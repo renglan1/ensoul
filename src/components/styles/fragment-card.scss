@@ -20,11 +20,11 @@
   &:hover {
     transform: translate(0.5%, 0.5%);
     img {
-      filter: invert(0.075);
+      filter: invert(0.05);
     }
 
     img.glow{
-      filter: invert(1) blur(8px);
+      filter: invert(1) blur(10px);
     }
   }
 
