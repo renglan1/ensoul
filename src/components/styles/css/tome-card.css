@@ -68,8 +68,9 @@
   }
 }
 .tome-card .caption h3 {
+  border-top: 3px solid white;
   border-bottom: 3px solid white;
-  padding-bottom: 10px;
+  padding: 2.5% 0;
   border-radius: 3px;
   white-space: nowrap;
 }

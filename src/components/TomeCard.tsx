@@ -26,7 +26,7 @@ const TomeCard = ({ figureName, figureTitle, figureLink }: TomeCardProps) => {
   return (
     <div
       className="tome-card">
-      <Tint color="black" opacity={0.65} borderRadius={10}/>
+      <Tint color="black" opacity={0.65} borderRadius={10} />
       <a 
         href={figureLink} 
         target="_blank" 
