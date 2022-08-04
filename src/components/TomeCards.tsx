@@ -11,17 +11,17 @@ type Figure = {
 };
 
 type TomeCardsProps = {
-  figures: Array<Figure>;
+  figures?: Array<Figure>;
 };
 
 const TomeCards = ({ figures }: TomeCardsProps) => {
   return (
     <div className="tome-cards">
-        {figures.map((figure, i) => {
+        {figures ? figures.map((figure, i) => {
           return (
             <TomeCard key={ i } figureName={figure.name} figureTitle={figure.title} figureLink={figure.link}/>
           );
-        })}
+        }) : <></>}
     </div>
   );
 };
