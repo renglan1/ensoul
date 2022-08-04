@@ -4,7 +4,7 @@ import "./styles/css/wallpaper.css";
 export const Wallpaper = () => {
   return (
     <div className="wallpaper">
-        <img src={require('../assets/images/background.jpg')} />
+        <img src={require('../assets/images/wallpaper.jpg')} />
     </div>
   );
 };
