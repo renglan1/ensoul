@@ -17,22 +17,22 @@ function App() {
     },
     {
       id: 3,
-      name: "Lautrec",
-      title: "the Embraced",
+      name: "Astel",
+      title: "the Insatiable",
     },
     {
       id: 4,
-      name: "Seath",
-      title: "the Scaleless",
+      name: "Malakath",
+      title: "the Dread",
     },
     {
       id: 5,
-      name: "Rennala",
-      title: "Queen of the Full Moon",
+      name: "Veer",
+      title: "the Hunter",
     },
     {
       id: 6,
-      name: "Placeholder",
+      name: "Lorem",
       title: "the Destroyer",
     },
   ];

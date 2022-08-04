@@ -6,7 +6,7 @@ import Tint from "./Tint";
 export const Header = () => {
   return (
     <div className="header">
-      <Tint color="black" opacity={0.6} blur={20}/>
+      <Tint color="black" opacity={0.1} blur={5}/>
       <img src={require("../assets/images/icon.svg").default} alt='' />
       <h1 className="logo">
         <SpacedText text="soularium" />

@@ -14,28 +14,21 @@
 .fragment-card:visited {
   color: white;
 }
-.fragment-card > * {
-  position: absolute;
-}
 .fragment-card:hover {
   transform: translate(0.5%, 0.5%);
 }
 .fragment-card:hover img {
-  filter: invert(0.05);
+  filter: invert(0.075);
 }
 .fragment-card:hover img.glow {
   filter: invert(1) blur(8px);
 }
-.fragment-card .card {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
 .fragment-card .caption {
-  width: 100%;
-  padding: 0 10%;
-  bottom: 0;
+  position: absolute;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -48,22 +41,22 @@
   width: 100%;
 }
 .fragment-card .caption p {
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   margin-top: 12px;
 }
 @media only screen and (min-width: 569px) {
   .fragment-card .caption p {
-    font-size: calc(0.75rem + 1 * (0.75rem * 0.3));
+    font-size: calc(0.9rem + 1 * (0.9rem * 0.3));
   }
 }
 @media only screen and (min-width: 1025px) {
   .fragment-card .caption p {
-    font-size: calc(0.75rem + 2 * (0.75rem * 0.3));
+    font-size: calc(0.9rem + 2 * (0.9rem * 0.3));
   }
 }
 @media only screen and (min-width: 1441px) {
   .fragment-card .caption p {
-    font-size: calc(0.75rem + 3 * (0.75rem * 0.3));
+    font-size: calc(0.9rem + 3 * (0.9rem * 0.3));
   }
 }
 .fragment-card .caption h3 {
@@ -75,13 +68,12 @@
 }
 .fragment-card .portrait {
   width: 100%;
-  height: 0;
-  padding-top: 115%;
 }
 .fragment-card .portrait img {
   position: absolute;
-  padding: 10% 10% 0 10%;
+  padding: 5%;
   width: 100%;
+  height: 100%;
   top: 0.12%;
   left: 0.18%;
   transition: filter 0.55s, transform 0.55s;
