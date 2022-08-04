@@ -24,15 +24,14 @@ const FragmentCard = ({ figureName, figureTitle, figureLink }: FragmentCardProps
   }
 
   return (
-    <div
-      className="fragment-card">
+    <a
+      href={figureLink} 
+      target="_blank" 
+      className="fragment-card"
+      rel="noopener noreferrer"
+    >
       <Tint color="black" opacity={0.65} borderRadius={10} />
-      <a 
-        href={figureLink} 
-        target="_blank" 
-        className="card"
-        rel="noopener noreferrer"
-      >
+      <a className="card">
         <div className="portrait">
           {["glow", ""].map((className, i) => {
             return (
@@ -55,7 +54,7 @@ const FragmentCard = ({ figureName, figureTitle, figureLink }: FragmentCardProps
           <p>{figureTitle}</p>
         </div>
       </a>
-    </div>
+    </a>
   );
 };
 

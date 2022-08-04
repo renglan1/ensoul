@@ -4,13 +4,13 @@
     grid-template-columns: repeat(6, 1fr);
     gap: 16px;
 
-    > div {
+    > .fragment-card {
         grid-column: span 6;
     }
 }
 
 @media #{vars.$mobile-and-up} {
-    .fragment-cards > div {
+    .fragment-cards > .fragment-card {
         grid-column: span 3;
     }
 }
@@ -22,9 +22,7 @@
 }
 
 @media #{vars.$desktop-large-and-up} {
-    .fragment-cards {
-        > div {
-            grid-column: span 2;
-        } 
+    .fragment-cards > .fragment-card{
+        grid-column: span 2;
     }
 }

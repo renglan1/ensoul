@@ -3,12 +3,12 @@
   grid-template-columns: repeat(6, 1fr);
   gap: 16px;
 }
-.fragment-cards > div {
+.fragment-cards > .fragment-card {
   grid-column: span 6;
 }
 
 @media only screen and (min-width: 569px) {
-  .fragment-cards > div {
+  .fragment-cards > .fragment-card {
     grid-column: span 3;
   }
 }
@@ -18,7 +18,7 @@
   }
 }
 @media only screen and (min-width: 1601px) {
-  .fragment-cards > div {
+  .fragment-cards > .fragment-card {
     grid-column: span 2;
   }
 }
