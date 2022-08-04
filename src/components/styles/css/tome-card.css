@@ -83,13 +83,13 @@
   position: absolute;
   padding: 10% 10% 0 10%;
   width: 100%;
-  top: 1.25%;
-  left: 1%;
+  top: 0.12%;
+  left: 0.18%;
   transition: filter 0.55s, transform 0.55s;
 }
 .tome-card img.glow {
   position: absolute;
   filter: invert(1);
-  top: 1%;
+  top: 0;
   left: 0;
 }

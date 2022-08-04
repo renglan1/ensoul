@@ -7,33 +7,28 @@ function App() {
   const figures = [
     { 
       id: 1,
-      name: "Artorias",
-      title: "the Abysswalker",
-      link: "https://darksouls.wiki.fextralife.com/Artorias+the+Abysswalker",
+      name: "Isha",
+      title: "the Revenant",
     },
     {
       id: 2,
-      name: "Sif",
-      title: "the Great Grey Wolf",
-      link: "https://darksouls.wiki.fextralife.com/Great+Grey+Wolf+Sif",
+      name: "Lydia",
+      title: "the Inquisitor",
     },
     {
       id: 3,
       name: "Lautrec",
       title: "the Embraced",
-      link: "https://darksouls.wiki.fextralife.com/Knight+Lautrec",
     },
     {
       id: 4,
       name: "Seath",
       title: "the Scaleless",
-      link: "https://darksouls.wiki.fextralife.com/Seath+the+Scaleless",
     },
     {
       id: 5,
       name: "Rennala",
       title: "Queen of the Full Moon",
-      link: "https://eldenring.wiki.fextralife.com/Rennala+Queen+of+the+Full+Moon",
     },
     {
       id: 6,
