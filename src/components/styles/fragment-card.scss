@@ -44,6 +44,7 @@
     }
     p {
       @include font-styles.font-attributes(0.9rem);
+      @include font-styles.contrast-font(white);
       margin-top: 12px;
     }
     h3 {
