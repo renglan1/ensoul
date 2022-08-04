@@ -49,8 +49,13 @@
   width: 100%;
 }
 .tome-card .caption p {
-  font-size: calc(0.75rem + 1 * (0.75rem * 0.3));
+  font-size: 0.75rem;
   margin-top: 12px;
+}
+@media only screen and (min-width: 569px) {
+  .tome-card .caption p {
+    font-size: calc(0.75rem + 1 * (0.75rem * 0.3));
+  }
 }
 @media only screen and (min-width: 1025px) {
   .tome-card .caption p {

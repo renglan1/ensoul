@@ -9,7 +9,7 @@
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  gap: 10vw;
+  gap: 5.5vh;
   user-select: none;
 
   h1 {
@@ -18,8 +18,14 @@
 
   img {
     width: 35%;
-    min-width: 65px;
+    min-width: 165px;
     object-fit: cover;
+  }
+}
+
+@media #{vars.$mobile-and-up} {
+  .header {
+    gap: 10vh;
   }
 }
 

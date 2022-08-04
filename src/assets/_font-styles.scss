@@ -6,7 +6,11 @@
 }
 
 @mixin font-attributes($base-size) {
-  font-size: scale-font($base-size, 1);
+  font-size: $base-size;
+
+  @media #{vars.$mobile-and-up} {
+    font-size: scale-font($base-size, 1);
+  }
 
   @media #{vars.$desktop-small-and-up} {
     font-size: scale-font($base-size, 2);

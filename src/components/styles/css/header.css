@@ -7,7 +7,7 @@
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  gap: 10vw;
+  gap: 5.5vh;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -18,11 +18,16 @@
 }
 .header img {
   width: 35%;
-  min-width: 65px;
+  min-width: 165px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
+@media only screen and (min-width: 569px) {
+  .header {
+    gap: 10vh;
+  }
+}
 @media only screen and (min-width: 1025px) {
   .header {
     flex-flow: row nowrap;
