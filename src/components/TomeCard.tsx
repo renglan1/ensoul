@@ -31,6 +31,7 @@ const TomeCard = ({ figureName, figureTitle, figureLink }: TomeCardProps) => {
         href={figureLink} 
         target="_blank" 
         className="card"
+        rel="noopener noreferrer"
       >
         <div className="portrait">
           {["glow", ""].map((className, i) => {

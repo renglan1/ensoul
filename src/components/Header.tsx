@@ -7,7 +7,7 @@ export const Header = () => {
   return (
     <div className="header">
       <Tint color="black" opacity={0.6} blur={20}/>
-      <img src={require("../assets/images/icon.svg").default} />
+      <img src={require("../assets/images/icon.svg").default} alt='' />
       <h1 className="logo">
         <SpacedText text="ensoul" />
       </h1>
