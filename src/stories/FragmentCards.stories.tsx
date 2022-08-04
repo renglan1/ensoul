@@ -14,7 +14,7 @@ const Template: ComponentStory<typeof FragmentCards> = (args: any) => (
 
 export const Default = Template.bind({});
 Default.args = {
-  figures: [
+  characters: [
     {
       id: 1,
       name: "Artorias",

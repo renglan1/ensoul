@@ -7,19 +7,19 @@ import Tint from "./Tint";
 import "./styles/css/fragment-card.css";
 
 type FragmentCardProps = {
-  figureName: string;
-  figureTitle: string;
-  figureLink?: string;
+  characterName: string;
+  characterTitle: string;
+  characterLink?: string;
 };
 
 const FragmentCard = ({
-  figureName,
-  figureTitle,
-  figureLink,
+  characterName,
+  characterTitle,
+  characterLink,
 }: FragmentCardProps) => {
   function hasImg() {
     try {
-      require(`../assets/images/figures/${figureName.toLowerCase()}.svg`);
+      require(`../assets/images/characters/${characterName.toLowerCase()}.svg`);
     } catch (e) {
       return false;
     }
@@ -29,7 +29,7 @@ const FragmentCard = ({
 
   return (
     <a
-      href={figureLink}
+      href={characterLink}
       target="_blank"
       className="fragment-card"
       rel="noopener noreferrer"
@@ -40,11 +40,11 @@ const FragmentCard = ({
           return (
             <img
               key={i}
-              src={require(`../assets/images/figures/${(hasImg()
-                ? figureName
+              src={require(`../assets/images/characters/${(hasImg()
+                ? characterName
                 : "placeholder"
               ).toLowerCase()}.svg`)}
-              alt={figureName}
+              alt={characterName}
               className={className}
             />
           );
@@ -53,18 +53,18 @@ const FragmentCard = ({
       <div className="caption">
         <h3>
           <Tint color="white" opacity={0.2} blur={8} />
-          <SpacedText text={figureName} />
+          <SpacedText text={characterName} />
         </h3>
-        <p>{figureTitle}</p>
+        <p>{characterTitle}</p>
       </div>
     </a>
   );
 };
 
 FragmentCard.propTypes = {
-  figureName: PropTypes.string.isRequired,
-  figureTitle: PropTypes.string.isRequired,
-  figureLink: PropTypes.string,
+  characterName: PropTypes.string.isRequired,
+  characterTitle: PropTypes.string.isRequired,
+  characterLink: PropTypes.string,
 };
 
 export default FragmentCard;

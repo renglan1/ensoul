@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import FragmentCard from "./FragmentCard";
 import "./styles/css/fragment-cards.css";
 
-type Figure = {
+type character = {
   id: number;
   name: string;
   title: string;
@@ -11,15 +11,15 @@ type Figure = {
 };
 
 type FragmentCardsProps = {
-  figures?: Array<Figure>;
+  characters?: Array<character>;
 };
 
-const FragmentCards = ({ figures }: FragmentCardsProps) => {
+const FragmentCards = ({ characters }: FragmentCardsProps) => {
   return (
     <div className="fragment-cards">
-        {figures ? figures.map((figure, i) => {
+        {characters ? characters.map((character, i) => {
           return (
-            <FragmentCard key={ i } figureName={figure.name} figureTitle={figure.title} figureLink={figure.link}/>
+            <FragmentCard key={ i } characterName={character.name} characterTitle={character.title} characterLink={character.link}/>
           );
         }) : <></>}
     </div>
@@ -27,7 +27,7 @@ const FragmentCards = ({ figures }: FragmentCardsProps) => {
 };
 
 FragmentCards.propTypes = {
-  figures: PropTypes.array.isRequired,
+  characters: PropTypes.array.isRequired,
 };
 
 export default FragmentCards;

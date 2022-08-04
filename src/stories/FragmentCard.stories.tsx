@@ -12,7 +12,7 @@ const Template: ComponentStory<typeof FragmentCard> = (args: any) => <FragmentCa
 
 export const Default = Template.bind({});
 Default.args = {
-    figureName: 'Artorias',
-    figureTitle: 'the Abysswalker',
-    figureLink: 'https://darksouls.wiki.fextralife.com/Artorias+the+Abysswalker',
+    characterName: 'Artorias',
+    characterTitle: 'the Abysswalker',
+    characterLink: 'https://darksouls.wiki.fextralife.com/Artorias+the+Abysswalker',
 }

@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import "../src/assets/css/global.css";
 
 function App() {
-  const figures = [
+  const characters = [
     { 
       id: 1,
       name: "Isha",
@@ -42,7 +42,7 @@ function App() {
       <Header />
       <Wallpaper />
       <div style={{margin: '7.5% 12.5% 12.5% 12.5%'}}>
-        <FragmentCards figures={figures} />
+        <FragmentCards characters={characters} />
       </div>
     </div>
   );
