@@ -1,4 +1,4 @@
-.tome-card {
+.fragment-card {
   top: 0;
   position: relative;
   border-radius: 10px;
@@ -10,16 +10,16 @@
   box-shadow: 0 0 8px 1px rgb(48, 48, 48);
   transition: transform 0.55s;
 }
-.tome-card > * {
+.fragment-card > * {
   position: absolute;
 }
-.tome-card:hover {
+.fragment-card:hover {
   transform: translate(0.5%, 0.5%);
 }
-.tome-card:hover img {
+.fragment-card:hover img {
   filter: invert(0.075);
 }
-.tome-card .card {
+.fragment-card .card {
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -30,10 +30,10 @@
   height: 100%;
   text-decoration: none;
 }
-.tome-card .card:visited {
+.fragment-card .card:visited {
   color: white;
 }
-.tome-card .caption {
+.fragment-card .caption {
   width: 100%;
   padding: 0 10%;
   bottom: 0;
@@ -42,44 +42,44 @@
       -ms-user-select: none;
           user-select: none;
 }
-.tome-card .caption p,
-.tome-card .caption h3 {
+.fragment-card .caption p,
+.fragment-card .caption h3 {
   position: relative;
   text-align: center;
   width: 100%;
 }
-.tome-card .caption p {
+.fragment-card .caption p {
   font-size: 0.75rem;
   margin-top: 12px;
 }
 @media only screen and (min-width: 569px) {
-  .tome-card .caption p {
+  .fragment-card .caption p {
     font-size: calc(0.75rem + 1 * (0.75rem * 0.3));
   }
 }
 @media only screen and (min-width: 1025px) {
-  .tome-card .caption p {
+  .fragment-card .caption p {
     font-size: calc(0.75rem + 2 * (0.75rem * 0.3));
   }
 }
 @media only screen and (min-width: 1441px) {
-  .tome-card .caption p {
+  .fragment-card .caption p {
     font-size: calc(0.75rem + 3 * (0.75rem * 0.3));
   }
 }
-.tome-card .caption h3 {
+.fragment-card .caption h3 {
   border-top: 3px solid white;
   border-bottom: 3px solid white;
   padding: 2.5% 0;
   border-radius: 3px;
   white-space: nowrap;
 }
-.tome-card .portrait {
+.fragment-card .portrait {
   width: 100%;
   height: 0;
   padding-top: 115%;
 }
-.tome-card .portrait img {
+.fragment-card .portrait img {
   position: absolute;
   padding: 10% 10% 0 10%;
   width: 100%;
@@ -87,7 +87,7 @@
   left: 0.18%;
   transition: filter 0.55s, transform 0.55s;
 }
-.tome-card img.glow {
+.fragment-card img.glow {
   position: absolute;
   filter: invert(1);
   top: 0;

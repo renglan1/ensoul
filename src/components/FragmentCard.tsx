@@ -4,15 +4,15 @@ import React from "react";
 import PropTypes from "prop-types";
 import SpacedText from "./SpacedText";
 import Tint from "./Tint";
-import "./styles/css/tome-card.css";
+import "./styles/css/fragment-card.css";
 
-type TomeCardProps = {
+type FragmentCardProps = {
   figureName: string;
   figureTitle: string;
   figureLink: string;
 };
 
-const TomeCard = ({ figureName, figureTitle, figureLink }: TomeCardProps) => {
+const FragmentCard = ({ figureName, figureTitle, figureLink }: FragmentCardProps) => {
   function hasImg() {
     try {
       require(`../assets/images/figures/${figureName.toLowerCase()}.svg`);
@@ -25,7 +25,7 @@ const TomeCard = ({ figureName, figureTitle, figureLink }: TomeCardProps) => {
 
   return (
     <div
-      className="tome-card">
+      className="fragment-card">
       <Tint color="black" opacity={0.65} borderRadius={10} />
       <a 
         href={figureLink} 
@@ -59,13 +59,13 @@ const TomeCard = ({ figureName, figureTitle, figureLink }: TomeCardProps) => {
   );
 };
 
-TomeCard.propTypes = {
+FragmentCard.propTypes = {
   figureName: PropTypes.string.isRequired,
   figureTitle: PropTypes.string.isRequired,
 };
 
-TomeCard.defaultProps = {
+FragmentCard.defaultProps = {
   figureName: "direction",
 };
 
-export default TomeCard;
+export default FragmentCard;

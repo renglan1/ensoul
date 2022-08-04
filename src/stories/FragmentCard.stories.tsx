@@ -1,14 +1,14 @@
 import React from 'react';
 
-import TomeCard from '../components/TomeCard';
+import FragmentCard from '../components/FragmentCard';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 export default {
-    title: 'TomeCard',
-    component: TomeCard,
-} as ComponentMeta<typeof TomeCard>
+    title: 'FragmentCard',
+    component: FragmentCard,
+} as ComponentMeta<typeof FragmentCard>
 
-const Template: ComponentStory<typeof TomeCard> = (args: any) => <TomeCard {...args} />;
+const Template: ComponentStory<typeof FragmentCard> = (args: any) => <FragmentCard {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {

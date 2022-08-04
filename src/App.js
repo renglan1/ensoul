@@ -1,4 +1,4 @@
-import TomeCards from "./components/TomeCards";
+import FragmentCards from "./components/FragmentCards";
 import Wallpaper from "./components/Wallpaper";
 import Header from "./components/Header";
 import "../src/assets/css/global.css";
@@ -42,7 +42,7 @@ function App() {
       <Header />
       <Wallpaper />
       <div style={{margin: '7.5% 12.5% 12.5% 12.5%'}}>
-        <TomeCards figures={figures} />
+        <FragmentCards figures={figures} />
       </div>
     </div>
   );

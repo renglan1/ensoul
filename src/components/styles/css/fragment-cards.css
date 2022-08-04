@@ -1,24 +1,24 @@
-.tome-cards {
+.fragment-cards {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 16px;
 }
-.tome-cards > div {
+.fragment-cards > div {
   grid-column: span 6;
 }
 
 @media only screen and (min-width: 569px) {
-  .tome-cards > div {
+  .fragment-cards > div {
     grid-column: span 3;
   }
 }
 @media only screen and (min-width: 1441px) {
-  .tome-cards {
+  .fragment-cards {
     gap: 80px;
   }
 }
 @media only screen and (min-width: 1601px) {
-  .tome-cards > div {
+  .fragment-cards > div {
     grid-column: span 2;
   }
 }

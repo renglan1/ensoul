@@ -1,5 +1,5 @@
 @use '../../assets/vars';
-.tome-cards{
+.fragment-cards{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 16px;
@@ -10,21 +10,21 @@
 }
 
 @media #{vars.$mobile-and-up} {
-    .tome-cards > div {
+    .fragment-cards > div {
         grid-column: span 3;
     }
 }
 
 @media #{vars.$desktop-and-up} {
-    .tome-cards {
+    .fragment-cards {
         gap: 80px;
     }
 }
 
 @media #{vars.$desktop-large-and-up} {
-    .tome-cards {
+    .fragment-cards {
         > div {
             grid-column: span 2;
-        }
+        } 
     }
 }
