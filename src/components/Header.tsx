@@ -9,7 +9,7 @@ export const Header = () => {
       <Tint color="black" opacity={0.6} blur={20}/>
       <img src={require("../assets/images/icon.svg").default} alt='' />
       <h1 className="logo">
-        <SpacedText text="ensoul" />
+        <SpacedText text="soularium" />
       </h1>
     </div>
   );
