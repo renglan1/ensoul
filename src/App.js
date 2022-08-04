@@ -31,8 +31,9 @@ function App() {
     },
     {
       id: 5,
-      name: "Placeholder",
-      title: "the Unstoppable",
+      name: "Rennala",
+      title: "Queen of the Full Moon",
+      link: "https://eldenring.wiki.fextralife.com/Rennala+Queen+of+the+Full+Moon",
     },
     {
       id: 6,
