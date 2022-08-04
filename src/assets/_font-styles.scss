@@ -1,0 +1,22 @@
+@use './vars';
+
+@mixin contrast-font($color) {
+  color: $color;
+  text-shadow: 1px 1px 10px invert($color), -1px -1px 10px invert($color);
+}
+
+@mixin font-attributes($base-size) {
+  font-size: scale-font($base-size, 1);
+
+  @media #{vars.$desktop-small-and-up} {
+    font-size: scale-font($base-size, 2);
+  }
+
+  @media #{vars.$desktop-and-up} {
+    font-size: scale-font($base-size, 3);
+  }
+}
+
+@function scale-font($base-size, $factor) {
+  @return calc(#{$base-size} + #{$factor} * (#{$base-size} * 0.3));
+}

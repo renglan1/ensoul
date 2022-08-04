@@ -1,0 +1,92 @@
+@use '../../assets/font-styles';
+
+.tome-card {
+  top: 0;
+  position: relative;
+  border-radius: 10px;
+  padding: 30px;
+  color: white;
+  min-width: 175px;
+  padding-top: 165%;
+  height: 0;
+  box-shadow: 0 0 8px 1px rgb(48, 48, 48);
+  transition: transform 0.55s;
+
+  > * {
+    position: absolute;
+  }
+
+  &:hover {
+    transform: translate(0.25%, 0.25%);
+    img {
+      filter: invert(1);
+      transform: translate(-0.25%, -0.25%);
+    }
+    img.glow {
+      filter: none;
+      transform: translate(-0.25%, -0.25%);
+    }
+  }
+
+  .card {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+
+    &:visited {
+      color: white;
+    }
+  }
+
+  .caption {
+    width: 100%;
+    padding: 0 10%;
+    bottom: 0;
+    user-select: none;
+
+    p,
+    h3 {
+      position: relative;
+      text-align: center;
+      width: 100%;
+    }
+    p {
+      @include font-styles.font-attributes(0.75rem);
+      margin-top: 12px;
+    }
+    h3 {
+      border-bottom: 3px solid white;
+      padding-bottom: 10px;
+      border-radius: 3px;
+      white-space: nowrap;
+    }
+  }
+
+  .portrait {
+    width: 100%;
+    height: 0;
+    padding-top: 115%;
+
+    img {
+      position: absolute;
+      padding: 10% 10% 0 10%;
+      width: 100%;
+      top: 1.75%;
+      left: 0.75%;
+      transition: filter 0.55s, transform 0.55s;
+    }
+  }
+
+  img.glow {
+    position: absolute;
+    filter: invert(1);
+    top: 1%;
+    left: 0;
+  }
+}

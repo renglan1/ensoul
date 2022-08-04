@@ -1,0 +1,38 @@
+@use '../../assets/font-styles';
+@use '../../assets/vars';
+
+.header {
+  @include font-styles.contrast-font(white);
+  position: relative;
+  padding: 12.5%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10vw;
+  user-select: none;
+
+  h1 {
+    flex: 0 0 100%;
+  }
+
+  img {
+    width: 35%;
+    min-width: 65px;
+    object-fit: cover;
+  }
+}
+
+@media #{vars.$desktop-small-and-up} {
+  .header {
+    flex-flow: row nowrap;
+    padding: 5% 0;
+    gap: 5vw;
+    h1 {
+      flex: 0 0 60%;
+    }
+    img {
+      width: 12.5%;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+// Media Query Ranges
+$mobile-small-up: 569px !default;
+$mobile-up: 769px !default;
+$desktop-small-up: 1025px !default;
+$desktop-up: 1441px !default;
+$desktop-large-up: 1601px !default;
+
+$mobile-small: 568px !default;
+$mobile: 768px !default;
+$desktop-small: 1024px !default;
+$desktop: 1440px !default;
+$desktop-large: 1920px !default;
+
+$mobile-and-up: "only screen and (min-width: #{$mobile-small-up})" !default;
+$desktop-small-and-up: "only screen and (min-width: #{$desktop-small-up})" !default;
+$desktop-and-up: "only screen and (min-width: #{$desktop-up})" !default;
+$desktop-large-and-up: "only screen and (min-width: #{$desktop-large-up})" !default;
+
+$settings-height: 12vh;
+$background-select-height: 23vh;

@@ -1,0 +1,54 @@
+@use "sass:list";
+@use "_vars";
+@use "_reset";
+@use "_font-styles";
+
+// Font sizes
+$logo-size: 3.5rem;
+$body-size: 1rem;
+$header-sizes: 2.2rem, 1.6rem, 1.2rem;
+
+@font-face {
+  font-family: logo;
+  src: url(../fonts/Philosopher-Bold.ttf);
+}
+
+@font-face {
+  font-family: heading;
+  src: url(../fonts/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: body;
+  src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  @include font-styles.contrast-font(white);
+  font-family: main;
+}
+
+@for $i from 1 through 3 {
+  h#{$i} {
+    @include font-styles.font-attributes(list.nth($header-sizes, $i));
+  }
+}
+
+h1.logo{
+  font-family: logo;
+  @include font-styles.font-attributes($logo-size);
+}
+
+h1, h2, h3 {
+  font-family: heading;
+  line-height: 0.7;
+}
+
+p, span {
+  font-family: body;
+  @include font-styles.font-attributes($body-size);
+}
