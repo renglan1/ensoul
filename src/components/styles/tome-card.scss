@@ -17,14 +17,9 @@
   }
 
   &:hover {
-    transform: translate(0.25%, 0.25%);
+    transform: translate(0.5%, 0.5%);
     img {
-      filter: invert(1);
-      transform: translate(-0.25%, -0.25%);
-    }
-    img.glow {
-      filter: none;
-      transform: translate(-0.25%, -0.25%);
+      filter: invert(0.05);
     }
   }
 
