@@ -32,8 +32,8 @@ function App() {
     },
     {
       id: 6,
-      name: "Zyra",
-      title: "the Witch of the Woods",
+      name: "Phoci",
+      title: "the Mage of the Golden Spire",
     },
   ];
 
