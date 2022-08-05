@@ -32,8 +32,8 @@ function App() {
     },
     {
       id: 6,
-      name: "Lorem",
-      title: "the Destroyer",
+      name: "Zyra",
+      title: "the Witch of the Woods",
     },
   ];
 

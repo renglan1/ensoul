@@ -21,7 +21,7 @@
   filter: invert(0.05);
 }
 .fragment-card:hover img.glow {
-  filter: invert(1) blur(10px);
+  filter: invert(1) blur(16px);
 }
 .fragment-card .caption {
   position: absolute;
