@@ -4,12 +4,12 @@
 @use '_font-styles';
 
 // Font sizes
-$logo-size: 3.5rem;
+$title-size: 3.5rem;
 $body-size: 1rem;
 $header-sizes: 2.2rem, 1.6rem, 1.2rem;
 
 @font-face {
-  font-family: logo;
+  font-family: title;
   src: url(../fonts/Philosopher-Bold.ttf);
 }
 
@@ -38,9 +38,9 @@ header {
   }
 }
 
-h1.logo{
-  font-family: logo;
-  @include font-styles.font-attributes($logo-size);
+h1.title{
+  font-family: title;
+  @include font-styles.font-attributes($title-size);
 }
 
 h1, h2, h3 {

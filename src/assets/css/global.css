@@ -46,7 +46,7 @@ blockquote, q {
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: '';
+  content: "";
   content: none;
 }
 
@@ -56,7 +56,7 @@ table {
 }
 
 @font-face {
-  font-family: logo;
+  font-family: title;
   src: url(../fonts/Philosopher-Bold.ttf);
 }
 @font-face {
@@ -134,22 +134,22 @@ h3 {
   }
 }
 
-h1.logo {
-  font-family: logo;
+h1.title {
+  font-family: title;
   font-size: 3.5rem;
 }
 @media only screen and (min-width: 569px) {
-  h1.logo {
+  h1.title {
     font-size: calc(3.5rem + 1 * (3.5rem * 0.3));
   }
 }
 @media only screen and (min-width: 1025px) {
-  h1.logo {
+  h1.title {
     font-size: calc(3.5rem + 2 * (3.5rem * 0.3));
   }
 }
 @media only screen and (min-width: 1441px) {
-  h1.logo {
+  h1.title {
     font-size: calc(3.5rem + 3 * (3.5rem * 0.3));
   }
 }
