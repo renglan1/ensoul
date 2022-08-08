@@ -1,0 +1,16 @@
+@import '../../assets/vars';
+
+.default-layout{
+    overflow: hidden;
+    main {
+        margin: 10% 2.5%;
+    }
+}
+
+@media #{$desktop-small-and-up} {
+    .default-layout {
+        main {
+            margin: 12.5%;
+        }
+    }
+}
