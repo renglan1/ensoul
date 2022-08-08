@@ -1,14 +1,15 @@
 import React from 'react';
 import SpacedText from './SpacedText';
+import PropTypes from 'prop-types';
 import './styles/header.scss';
 
 type HeaderProps = {
-  condensed: boolean;
+  expanded: boolean;
 }
 
-export const Header = ({ condensed }: HeaderProps) => {
+export const Header = ({ expanded }: HeaderProps) => {
   return (
-    <div className='header'>
+    <div className={`header`} >
       <img src={require('../assets/images/icon.svg').default} alt='' />
       <h1 className='title'>
         <SpacedText text='soularium' />
@@ -16,5 +17,9 @@ export const Header = ({ condensed }: HeaderProps) => {
     </div>
   );
 };
+
+Header.propTypes = {
+  expanded: PropTypes.bool.isRequired,
+}
 
 export default Header;

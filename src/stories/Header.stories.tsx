@@ -9,3 +9,13 @@ export default {
 } as ComponentMeta<typeof Header>;
 
 const Template: ComponentStory<typeof Header> = (args: any) => <Header {...args} />;
+
+export const Default = Template.bind({});
+Default.args = {
+    expanded: false,
+};
+
+export const Expanded = Template.bind({});
+Expanded.args = {
+    expanded: true,
+};
