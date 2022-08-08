@@ -1,7 +1,7 @@
 import FragmentCards from './components/FragmentCards';
 import Wallpaper from './components/Wallpaper';
 import Header from './components/Header';
-import '../src/assets/css/global.css';
+import '../src/assets/global.scss';
 
 function App() {
   const characters = [

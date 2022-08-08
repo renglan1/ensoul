@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import FragmentCard from './FragmentCard';
-import './styles/css/fragment-cards.css';
+import './styles/fragment-cards.scss';
 
 type character = {
   id: number;

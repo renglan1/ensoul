@@ -1,6 +1,6 @@
 import React from 'react';
-import './styles/css/header.css';
 import SpacedText from './SpacedText';
+import './styles/header.scss';
 
 type HeaderProps = {
   condensed: boolean;

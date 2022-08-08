@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/css/spaced-text.css';
+import './styles/spaced-text.scss';
 
 type SpacedTextProps = {
   text: string;

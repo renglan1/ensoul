@@ -4,7 +4,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import SpacedText from './SpacedText';
 import Tint from './Tint';
-import './styles/css/fragment-card.css';
+import './styles/fragment-card.scss';
 
 type FragmentCardProps = {
   characterName: string;

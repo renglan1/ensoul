@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/css/wallpaper.css';
+import './styles/wallpaper.scss';
 
 export const Wallpaper = () => {
   return (

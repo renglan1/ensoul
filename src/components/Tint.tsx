@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './styles/css/tint.css';
+import './styles/tint.scss';
 
 type TintProps = {
   color?: string;

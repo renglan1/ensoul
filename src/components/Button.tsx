@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './styles/css/button.css';
+import './styles/button.scss';
 
 type ButtonProps = {
   label: string,
