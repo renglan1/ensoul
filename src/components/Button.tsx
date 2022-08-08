@@ -13,7 +13,7 @@ type ButtonProps = {
 /**
  * Primary UI component for user interaction
  */
-export const Button = ({ label, primary, backgroundColor, size, onClick, ...props }: ButtonProps) => {
+const Button = ({ label, primary, backgroundColor, size, onClick, ...props }: ButtonProps) => {
   const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
   return (
     <button
@@ -38,3 +38,5 @@ Button.defaultProps = {
   size: 'medium',
   onClick: undefined,
 };
+
+export default Button;

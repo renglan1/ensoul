@@ -1,3 +1,5 @@
+@use '../../assets/font-styles';
+
 .spaced-text{
     display: flex;
     justify-content: space-around;
@@ -5,5 +7,9 @@
     span {
         font-family: inherit;
         font-size: inherit;
+    }
+
+    &.contrast span{
+        @include font-styles.contrast-font(white);
     }
 }

@@ -53,7 +53,7 @@ const FragmentCard = ({
       <div className='caption'>
         <h3>
           <Tint color='#FBECD6' opacity={0.35} />
-          <SpacedText text={characterName} />
+          <SpacedText text={characterName} contrast={true}/>
         </h3>
         <p>{characterTitle}</p>
       </div>

@@ -7,7 +7,7 @@ type HeaderProps = {
   expanded: boolean;
 }
 
-export const Header = ({ expanded }: HeaderProps) => {
+const Header = ({ expanded }: HeaderProps) => {
   return (
     <div className={`header`} >
       <img src={require('../assets/images/icon.svg').default} alt='' />
