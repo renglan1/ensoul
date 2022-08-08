@@ -12,11 +12,11 @@
     font-size: scale-font($base-size, 1);
   }
 
-  @media #{vars.$desktop-small-and-up} {
+  @media #{vars.$tablet-and-up} {
     font-size: scale-font($base-size, 2);
   }
 
-  @media #{vars.$desktop-and-up} {
+  @media #{vars.$desktop-small-and-up} {
     font-size: scale-font($base-size, 3);
   }
 }

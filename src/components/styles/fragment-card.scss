@@ -26,6 +26,10 @@
     img.glow{
       filter: invert(1) blur(16px);
     }
+
+    .caption h3 {
+      justify-content: space-around;
+    }
   }
 
   .caption {
@@ -53,6 +57,7 @@
       padding: 2.5% 0;
       border-radius: 3px;
       white-space: nowrap;
+      transition: justify-content 0.5s;
     }
   }
 

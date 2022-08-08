@@ -4,7 +4,7 @@
 .header {
   @include font-styles.contrast-font(white);
   position: relative;
-  padding: 12.5% 0;
+  margin: 12.5% 0;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -29,10 +29,10 @@
   }
 }
 
-@media #{vars.$desktop-small-and-up} {
+@media #{vars.$tablet-and-up} {
   .header {
     flex-flow: row nowrap;
-    padding: 5% 0;
+    margin: 5% 0;
     gap: 5vw;
     h1 {
       flex: 0 0 60%;
