@@ -1,7 +1,7 @@
-import React from "react";
-import PropTypes from "prop-types";
-import FragmentCard from "./FragmentCard";
-import "./styles/css/fragment-cards.css";
+import React from 'react';
+import PropTypes from 'prop-types';
+import FragmentCard from './FragmentCard';
+import './styles/css/fragment-cards.css';
 
 type character = {
   id: number;
@@ -16,7 +16,7 @@ type FragmentCardsProps = {
 
 const FragmentCards = ({ characters }: FragmentCardsProps) => {
   return (
-    <div className="fragment-cards">
+    <div className='fragment-cards'>
         {characters ? characters.map((character, i) => {
           return (
             <FragmentCard key={ i } characterName={character.name} characterTitle={character.title} characterLink={character.link}/>

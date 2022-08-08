@@ -1,15 +1,17 @@
-import React from "react";
-import "./styles/css/header.css";
-import SpacedText from "./SpacedText";
-import Tint from "./Tint";
+import React from 'react';
+import './styles/css/header.css';
+import SpacedText from './SpacedText';
 
-export const Header = () => {
+type HeaderProps = {
+  condensed: boolean;
+}
+
+export const Header = ({ condensed }: HeaderProps) => {
   return (
-    <div className="header">
-      <Tint color="black" opacity={0.075} blur={30}/>
-      <img src={require("../assets/images/icon.svg").default} alt='' />
-      <h1 className="logo">
-        <SpacedText text="soularium" />
+    <div className='header'>
+      <img src={require('../assets/images/icon.svg').default} alt='' />
+      <h1>
+        <SpacedText text='soularium' />
       </h1>
     </div>
   );

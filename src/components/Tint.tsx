@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 import PropTypes from 'prop-types';
-import "./styles/css/tint.css";
+import './styles/css/tint.css';
 
 type TintProps = {
   color?: string;
@@ -12,9 +12,9 @@ type TintProps = {
 const Tint = ({color, opacity, blur, borderRadius}: TintProps) => {
   return (
     <div 
-        className="tint" 
+        className='tint' 
         style={{
-            backgroundColor: color || "black", 
+            backgroundColor: color || 'black', 
             opacity: opacity || 0.5, 
             filter: `blur(${blur || 0}px)`,
             borderRadius: `${borderRadius || 0}px`,

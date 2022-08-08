@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 
-import FragmentCards from "../components/FragmentCards";
-import { ComponentStory, ComponentMeta } from "@storybook/react";
+import FragmentCards from '../components/FragmentCards';
+import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 export default {
-  title: "FragmentCards",
+  title: 'FragmentCards',
   component: FragmentCards,
 } as ComponentMeta<typeof FragmentCards>;
 
@@ -17,9 +17,9 @@ Default.args = {
   characters: [
     {
       id: 1,
-      name: "Artorias",
-      title: "the Abysswalker",
-      link: "https://darksouls.wiki.fextralife.com/Artorias+the+Abysswalker",
+      name: 'Artorias',
+      title: 'the Abysswalker',
+      link: 'https://darksouls.wiki.fextralife.com/Artorias+the+Abysswalker',
     },
   ],
 };

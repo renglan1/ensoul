@@ -1,9 +1,9 @@
-import React from "react";
-import "./styles/css/wallpaper.css";
+import React from 'react';
+import './styles/css/wallpaper.css';
 
 export const Wallpaper = () => {
   return (
-    <div className="wallpaper">
+    <div className='wallpaper'>
         <img src={require('../assets/images/wallpaper.jpg')} alt='' />
     </div>
   );
