@@ -1,0 +1,38 @@
+.contrast-image {
+  position: relative;
+
+  img {
+    position: absolute;
+    height: 100%;
+    width: auto;
+    top: 0.12%;
+    left: 50.18%;
+    transform: translateX(-50%);
+    transition: filter 0.55s, transform 0.55s;
+  }
+
+  .glow {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    filter: invert(1) blur(4px);
+  }
+
+  &.portrait {
+    padding-top: 165%;
+  }
+
+  &.square {
+    padding-top: 100%;
+  }
+
+  &.intensify:hover{
+    img {
+      filter: invert(0.05);
+    }
+
+    img.glow{
+      filter: invert(1) blur(16px);
+    }
+  }
+}

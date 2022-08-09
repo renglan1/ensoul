@@ -17,9 +17,7 @@
   }
 
   img {
-    width: 35%;
-    min-width: 165px;
-    object-fit: cover;
+    height: 50%;
   }
 }
 
@@ -36,10 +34,6 @@
     gap: 5vw;
     h1 {
       flex: 0 0 60%;
-    }
-    img {
-      width: 12.5%;
-      margin-bottom: 3%;
     }
   }
 }

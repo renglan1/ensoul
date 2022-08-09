@@ -1,5 +1,6 @@
 import React from 'react';
 import SpacedText from './SpacedText';
+import ContrastImage from './ContrastImage';
 import PropTypes from 'prop-types';
 import './styles/header.scss';
 
@@ -10,7 +11,7 @@ type HeaderProps = {
 const Header = ({ expanded }: HeaderProps) => {
   return (
     <div className={`header`} >
-      <img src={require('../assets/images/icon.svg').default} alt='' />
+      <ContrastImage src='logo.svg' alt='soularium logo' shape='square'/>
       <h1 className='title'>
         <SpacedText text='soularium' />
       </h1>

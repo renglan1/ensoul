@@ -18,15 +18,11 @@
 @media #{vars.$desktop-small-and-up} {
     .fragment-cards {
         gap: 80px;
-
-        > .fragment-card {
-            grid-column: span 4;
-        }
     }
 }
 
 @media #{vars.$desktop-and-up} {
     .fragment-cards > .fragment-card{
-        grid-column: span 3;
+        grid-column: span 4;
     }
 }

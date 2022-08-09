@@ -1,5 +1,6 @@
 import React from 'react';
 import './styles/spaced-text.scss';
+import PropTypes from 'prop-types';
 
 type SpacedTextProps = {
   text: string;
@@ -15,5 +16,10 @@ const SpacedText = ({text, contrast}: SpacedTextProps) => {
     </div>
   );
 };
+
+SpacedText.propTypes = {
+  text: PropTypes.string.isRequired,
+  contrast: PropTypes.bool,
+}
 
 export default SpacedText;
