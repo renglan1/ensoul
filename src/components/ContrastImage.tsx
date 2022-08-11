@@ -8,8 +8,8 @@ type shape = "portrait" | "landscape" | "square";
 type ContrastImageProps = {
   src: string;
   alt?: string;
-  height?: number;
-  width?: number;
+  height?: string;
+  width?: string;
   shape?: shape;
   hoverEffect?: boolean;
 };
@@ -23,8 +23,8 @@ const ContrastImage = ({
   hoverEffect,
 }: ContrastImageProps) => {
   const dimensions: {height: string, width: string, paddingTop?: number} = {
-    height: height + 'px' || 'auto',
-    width: width + 'px' || 'auto',
+    height: height || 'auto',
+    width: width || 'auto',
   }
 
   if(height){
