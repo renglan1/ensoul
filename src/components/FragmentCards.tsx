@@ -19,7 +19,12 @@ const FragmentCards = ({ characters }: FragmentCardsProps) => {
     <div className='fragment-cards'>
         {characters ? characters.map((character, i) => {
           return (
-            <FragmentCard key={ i } characterName={character.name} characterTitle={character.title} characterLink={character.link}/>
+            <FragmentCard 
+              key={ i } 
+              characterName={character.name} 
+              characterTitle={character.title} 
+              characterLink={character.link}
+            />
           );
         }) : <></>}
     </div>

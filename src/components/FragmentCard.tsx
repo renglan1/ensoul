@@ -6,6 +6,7 @@ import SpacedText from "./SpacedText";
 import Tint from "./Tint";
 import ContrastImage from "./ContrastImage";
 import "./styles/fragment-card.scss";
+import {motion} from "framer-motion";
 
 type FragmentCardProps = {
   characterName: string;
@@ -18,6 +19,8 @@ const FragmentCard = ({
   characterTitle,
   characterLink,
 }: FragmentCardProps) => {
+  const [isActive, setIsActive] = React.useState(false);
+
   function hasImg() {
     try {
       require(`../assets/images/characters/${characterName.toLowerCase()}.svg`);
@@ -28,14 +31,16 @@ const FragmentCard = ({
     return true;
   }
 
+  function updateActive(): void{
+    setIsActive(!isActive);
+  }
+
   return (
-    <a
-      href={characterLink}
-      target="_blank"
-      className="fragment-card"
-      rel="noopener noreferrer"
+    <motion.div 
+      className={`fragment-card ${isActive ? "active" : ""}`}
+      onClick={updateActive}
     >
-      <Tint color="black" opacity={0.65} borderRadius={10} />
+      <Tint color="black" opacity={0.75} borderRadius={10} />
       <ContrastImage
         src={`characters/${(hasImg() ? characterName : 'placeholder')}.svg`.toLowerCase()}
         alt={characterName}
@@ -49,7 +54,7 @@ const FragmentCard = ({
         </h3>
         <p>{characterTitle}</p>
       </div>
-    </a>
+    </motion.div>
   );
 };
 

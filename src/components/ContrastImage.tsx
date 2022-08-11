@@ -10,6 +10,7 @@ type ContrastImageProps = {
   alt?: string;
   height?: string;
   width?: string;
+  scale?: boolean;
   shape?: shape;
   hoverEffect?: boolean;
 };
@@ -19,6 +20,7 @@ const ContrastImage = ({
   alt,
   height,
   width,
+  scale,
   shape,
   hoverEffect,
 }: ContrastImageProps) => {
@@ -33,8 +35,15 @@ const ContrastImage = ({
 
   return (
     <div
-      className={`contrast-image ${shape} ${hoverEffect ? "intensify" : ""}`}
-      style={dimensions}
+      className={`
+        contrast-image ${shape ? shape : ""} 
+        ${hoverEffect ? "intensify" : ""}
+        ${scale ? "scale" : ""}
+      `}
+      style={{ 
+        '--baseHeight': height, 
+        '--baseWidth': width
+      } as React.CSSProperties}
     >
       <img
         src={

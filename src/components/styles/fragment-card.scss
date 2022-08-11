@@ -6,17 +6,25 @@
   border-radius: 10px;
   color: white;
   box-shadow: 0 0 8px 1px rgb(48, 48, 48);
-  transition: transform 0.75s;
   text-decoration: none;
   padding: 7.5%;
-  transform-origin: left;
+  transform-origin: center;
+  transition: transform 0.85s;
 
   &:visited {
     color: white;
   }
 
   &:hover {
-    transform: rotateY(20deg);
+    cursor: pointer;
+    transform: rotateY(-20deg);
+  }
+
+  &.active {
+    transform: rotateY(-180deg);
+    &:hover {
+      transform: rotateY(-200deg);
+    }
   }
 
   .caption {

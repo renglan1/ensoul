@@ -11,7 +11,13 @@ type HeaderProps = {
 const Header = ({ expanded }: HeaderProps) => {
   return (
     <div className={`header`} >
-      <ContrastImage src='logo.svg' alt='soularium logo' height={'250px'} width={'210px'} />
+      <ContrastImage 
+        src='logo.svg' 
+        alt='soularium logo' 
+        height={'200px'} 
+        width={'168px'}
+        scale
+      />
       <h1 className='title'>
         <SpacedText text='soularium' />
       </h1>

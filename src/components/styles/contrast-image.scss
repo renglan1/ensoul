@@ -1,5 +1,10 @@
+@use '../../assets/vars';
+
 .contrast-image {
   position: relative;
+  transition: height 0.75s, width 0.75s;
+  height: var(--baseHeight);
+  width: var(--baseWidth);
 
   img {
     position: absolute;
@@ -33,6 +38,15 @@
 
     img.glow{
       filter: invert(1) blur(16px);
+    }
+  }
+
+  @for $i from 1 through length(vars.$breakpoints) {
+    @media #{nth(vars.$breakpoints, $i)} {
+      &.scale {
+        height: calc(var(--baseHeight) * (1 + 0.15 * #{$i}));
+        width: calc(var(--baseWidth) * (1 + 0.15 * #{$i}));
+      }
     }
   }
 }
