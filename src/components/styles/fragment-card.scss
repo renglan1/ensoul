@@ -6,16 +6,17 @@
   border-radius: 10px;
   color: white;
   box-shadow: 0 0 8px 1px rgb(48, 48, 48);
-  transition: transform 0.55s;
+  transition: transform 0.75s;
   text-decoration: none;
   padding: 7.5%;
+  transform-origin: left;
 
   &:visited {
     color: white;
   }
 
   &:hover {
-    transform: translate(0.5%, 0.5%);
+    transform: rotateY(20deg);
   }
 
   .caption {
