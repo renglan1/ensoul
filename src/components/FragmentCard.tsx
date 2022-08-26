@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 import SpacedText from "./SpacedText";
 import Tint from "./Tint";
 import ContrastImage from "./ContrastImage";
-import "./styles/fragment-card.scss";
+import "@/components/styles/fragment-card.scss";
 import {motion} from "framer-motion";
 
 type FragmentCardProps = {
