@@ -7,7 +7,6 @@ type character = {
   id: number;
   name: string;
   title: string;
-  link: string;
 };
 
 type FragmentCardsProps = {
@@ -23,7 +22,6 @@ const FragmentCards = ({ characters }: FragmentCardsProps) => {
               key={ i } 
               characterName={character.name} 
               characterTitle={character.title} 
-              characterLink={character.link}
             />
           );
         }) : <></>}

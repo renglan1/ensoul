@@ -1,7 +1,7 @@
 import React from 'react';
-import FragmentCards from "@/components/FragmentCards";
-import DefaultLayout from "@/layouts/DefaultLayout";
-import "@/assets/global.scss";
+import FragmentCards from "components/FragmentCards";
+import DefaultLayout from "layouts/DefaultLayout";
+import "assets/global.scss";
 
 function App() {
   const characters = [

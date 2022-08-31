@@ -4,12 +4,10 @@
     "noImplicitAny": true,
     "module": "es6",
     "target": "es5",
-    "allowJs": true,
-    "baseUrl": "./src",
+    "baseUrl": "src",
     "jsx": "preserve",
-    "paths": {
-      "@/*": ["./src/*"],
-    }
+    "moduleResolution": "node"
   },
-  "files": ["src/index.ts"]
+  "files": ["src/index.ts"],
+  "include": ["src"]
 }

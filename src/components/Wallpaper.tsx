@@ -24,7 +24,7 @@ const WallpaperFrame = styled.div.attrs(props => ({className: 'wallpaper',}))`
 export default function Wallpaper({name}: WallpaperProps){
     return(
         <WallpaperFrame>
-            <img src={require(`@/assets/images/${name}`)} alt="wallpaper" />
+            <img src={require(`assets/images/wallpapers/${name}.jpg`)} alt="wallpaper" />
         </WallpaperFrame>
     );
 }

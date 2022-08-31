@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import './styles/header.scss';
 
 type HeaderProps = {
-  expanded: boolean;
+  expanded?: boolean;
 }
 
 const Header = ({ expanded }: HeaderProps) => {
@@ -15,7 +15,7 @@ const Header = ({ expanded }: HeaderProps) => {
         src='logo.svg' 
         alt='soularium logo' 
         height={'200px'} 
-        width={'168px'}
+        width={'168px'} 
         scale
       />
       <h1 className='title'>
@@ -26,7 +26,7 @@ const Header = ({ expanded }: HeaderProps) => {
 };
 
 Header.propTypes = {
-  expanded: PropTypes.bool.isRequired,
+  expanded: PropTypes.bool,
 }
 
 export default Header;

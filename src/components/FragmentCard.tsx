@@ -5,19 +5,17 @@ import PropTypes from "prop-types";
 import SpacedText from "./SpacedText";
 import Tint from "./Tint";
 import ContrastImage from "./ContrastImage";
-import "@/components/styles/fragment-card.scss";
+import "components/styles/fragment-card.scss";
 import {motion} from "framer-motion";
 
 type FragmentCardProps = {
   characterName: string;
   characterTitle: string;
-  characterLink?: string;
 };
 
 const FragmentCard = ({
   characterName,
   characterTitle,
-  characterLink,
 }: FragmentCardProps) => {
   const [isActive, setIsActive] = React.useState(false);
 

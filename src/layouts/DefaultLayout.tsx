@@ -1,11 +1,11 @@
 import React from 'react'
-import Wallpaper from '../components/Wallpaper';
-import Header from '../components/Header';
+import Wallpaper from 'components/Wallpaper';
+import Header from 'components/Header';
 import PropTypes from 'prop-types'
-import '../components/styles/default-layout.scss';
+import './styles/default-layout.scss';
 
 type DefaultLayoutProps = {
-  expanded: boolean,
+  expanded?: boolean,
   children: React.ReactNode,
 }
 
@@ -13,7 +13,7 @@ const DefaultLayout = ({ expanded, children }: DefaultLayoutProps) => {
   return (
     <div className="default-layout">
       <Header expanded={expanded}/>
-      <Wallpaper />
+      <Wallpaper name="solace"/>
       <main>
         {children}
       </main>
