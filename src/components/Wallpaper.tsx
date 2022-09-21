@@ -6,7 +6,7 @@ interface WallpaperProps {
     name: string;
 }
 
-const WallpaperFrame = styled.div.attrs(props => ({className: 'wallpaper',}))`
+const WallpaperFrame = styled.div.attrs(props => ({className: 'wallpaper'}))`
     position: fixed;
     top: 0;
     z-index: -1000;

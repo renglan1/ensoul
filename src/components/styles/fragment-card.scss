@@ -36,7 +36,7 @@
     user-select: none;
 
     p,
-    h3 {
+    h2 {
       position: relative;
       text-align: center;
       width: 100%;
@@ -45,14 +45,16 @@
       @include font-styles.font-attributes(0.9rem);
       @include font-styles.contrast-font(white);
       margin-top: 12px;
+      font-family: 'body'
     }
-    h3 {
+    h2 {
       border-top: 3px solid white;
       border-bottom: 3px solid white;
       padding: 2.5% 0;
       border-radius: 3px;
       white-space: nowrap;
       transition: justify-content 0.5s;
+      font-family: 'title';
     }
   }
 }

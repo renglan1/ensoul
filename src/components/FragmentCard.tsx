@@ -46,10 +46,10 @@ const FragmentCard = ({
         hoverEffect
       />
       <div className="caption">
-        <h3>
+        <h2>
           <Tint color="#FBECD6" opacity={0.35} />
           <SpacedText text={characterName} contrast />
-        </h3>
+        </h2>
         <p>{characterTitle}</p>
       </div>
     </motion.div>
