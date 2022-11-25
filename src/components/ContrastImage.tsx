@@ -15,7 +15,7 @@ type ContrastImageProps = {
   hoverEffect?: boolean;
 };
 
-const ContrastImage = ({
+const ContrastImage: React.FC<ContrastImageProps> = function({
   src,
   alt,
   height,
@@ -23,7 +23,7 @@ const ContrastImage = ({
   scale,
   shape,
   hoverEffect,
-}: ContrastImageProps) => {
+}: ContrastImageProps) {
   const dimensions: {height: string, width: string, paddingTop?: number} = {
     height: height || 'auto',
     width: width || 'auto',

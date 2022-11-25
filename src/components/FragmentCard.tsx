@@ -9,19 +9,19 @@ import "components/styles/fragment-card.scss";
 import {motion} from "framer-motion";
 
 type FragmentCardProps = {
-  characterName: string;
-  characterTitle: string;
+  fableName: string;
+  fableTitle: string;
 };
 
 const FragmentCard = ({
-  characterName,
-  characterTitle,
+  fableName,
+  fableTitle,
 }: FragmentCardProps) => {
   const [isActive, setIsActive] = React.useState(false);
 
   function hasImg() {
     try {
-      require(`../assets/images/characters/${characterName.toLowerCase()}.svg`);
+      require(`../assets/images/fables/${fableName.toLowerCase()}.svg`);
     } catch (e) {
       return false;
     }
@@ -31,6 +31,7 @@ const FragmentCard = ({
 
   function updateActive(): void{
     setIsActive(!isActive);
+    console.log(isActive);
   }
 
   return (
@@ -40,26 +41,26 @@ const FragmentCard = ({
     >
       <Tint color="black" opacity={0.75} borderRadius={10} />
       <ContrastImage
-        src={`characters/${(hasImg() ? characterName : 'placeholder')}.svg`.toLowerCase()}
-        alt={characterName}
+        src={`fables/${(hasImg() ? fableName : 'placeholder')}.svg`.toLowerCase()}
+        alt={fableName}
         shape="portrait"
         hoverEffect
       />
       <div className="caption">
         <h2>
           <Tint color="#FBECD6" opacity={0.35} />
-          <SpacedText text={characterName} contrast />
+          <SpacedText text={fableName} contrast />
         </h2>
-        <p>{characterTitle}</p>
+        <p>{fableTitle}</p>
       </div>
     </motion.div>
   );
 };
 
 FragmentCard.propTypes = {
-  characterName: PropTypes.string.isRequired,
-  characterTitle: PropTypes.string.isRequired,
-  characterLink: PropTypes.string,
+  fableName: PropTypes.string.isRequired,
+  fableTitle: PropTypes.string.isRequired,
+  fableLink: PropTypes.string,
 };
 
 export default FragmentCard;

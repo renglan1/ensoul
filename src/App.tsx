@@ -2,9 +2,10 @@ import React from 'react';
 import FragmentCards from "components/FragmentCards";
 import DefaultLayout from "layouts/DefaultLayout";
 import "assets/global.scss";
+import { fable } from "components/FragmentCards";
 
 function App() {
-  const characters = [
+  const fables = [
     {
       id: 1,
       name: "Isha",
@@ -40,7 +41,7 @@ function App() {
   return (
     <div className="App">
       <DefaultLayout>
-        <FragmentCards characters={characters} />
+        <FragmentCards fables={fables as Array<fable>} />
       </DefaultLayout>
     </div>
   );

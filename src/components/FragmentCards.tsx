@@ -3,34 +3,34 @@ import PropTypes from 'prop-types';
 import FragmentCard from './FragmentCard';
 import './styles/fragment-cards.scss';
 
-type character = {
+export type fable = {
   id: number;
   name: string;
   title: string;
 };
 
 type FragmentCardsProps = {
-  characters?: Array<character>;
+  fables?: Array<fable>;
 };
 
-const FragmentCards = ({ characters }: FragmentCardsProps) => {
+const FragmentCards: React.FC<FragmentCardsProps> = function({ fables }: FragmentCardsProps){
   return (
     <div className='fragment-cards'>
-        {characters ? characters.map((character, i) => {
+        {fables ? fables.map((fable, i) => {
           return (
             <FragmentCard 
               key={ i } 
-              characterName={character.name} 
-              characterTitle={character.title} 
+              fableName={fable.name} 
+              fableTitle={fable.title} 
             />
           );
-        }) : <></>}
+        }) : undefined}
     </div>
   );
 };
 
 FragmentCards.propTypes = {
-  characters: PropTypes.array.isRequired,
+  fables: PropTypes.array.isRequired,
 };
 
 export default FragmentCards;

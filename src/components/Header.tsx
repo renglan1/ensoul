@@ -8,7 +8,7 @@ type HeaderProps = {
   expanded?: boolean;
 }
 
-const Header = ({ expanded }: HeaderProps) => {
+const Header: React.FC<HeaderProps> = function({ expanded }: HeaderProps) {
   return (
     <div className={`header`} >
       <ContrastImage 

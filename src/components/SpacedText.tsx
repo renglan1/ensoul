@@ -7,7 +7,7 @@ type SpacedTextProps = {
   contrast?: boolean;
 };
 
-const SpacedText = ({text, contrast}: SpacedTextProps) => {
+const SpacedText: React.FC<SpacedTextProps> = function({text, contrast}: SpacedTextProps) {
   return (
     <div className={`spaced-text ${contrast ? 'contrast' : ''}`}>
       {text.toUpperCase().split('').map((letter, i) => {

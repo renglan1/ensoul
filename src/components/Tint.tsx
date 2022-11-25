@@ -9,7 +9,7 @@ type TintProps = {
   borderRadius?: number;
 };
 
-const Tint = ({color, opacity, blur, borderRadius}: TintProps) => {
+const Tint: React.FC<TintProps> = function({color, opacity, blur, borderRadius}: TintProps) {
   return (
     <div 
         className='tint' 
