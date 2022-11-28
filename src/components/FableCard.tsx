@@ -8,15 +8,15 @@ import ContrastImage from "./ContrastImage";
 import "components/styles/fragment-card.scss";
 import {motion} from "framer-motion";
 
-type FragmentCardProps = {
+type FableCardProps = {
   fableName: string;
   fableTitle: string;
 };
 
-const FragmentCard = ({
+const FableCard = ({
   fableName,
   fableTitle,
-}: FragmentCardProps) => {
+}: FableCardProps) => {
   const [isActive, setIsActive] = React.useState(false);
 
   function hasImg() {
@@ -41,7 +41,7 @@ const FragmentCard = ({
     >
       <Tint color="black" opacity={0.75} borderRadius={10} />
       <ContrastImage
-        src={`fables/${(hasImg() ? fableName : 'placeholder')}.svg`.toLowerCase()}
+        src={`fables/${(hasImg() ? fableName.toLowerCase() : 'placeholder')}.svg`}
         alt={fableName}
         shape="portrait"
         hoverEffect
@@ -51,16 +51,16 @@ const FragmentCard = ({
           <Tint color="#FBECD6" opacity={0.35} />
           <SpacedText text={fableName} contrast />
         </h2>
-        <p>{fableTitle}</p>
+        <p className="title">{fableTitle}</p>
       </div>
     </motion.div>
   );
 };
 
-FragmentCard.propTypes = {
+FableCard.propTypes = {
   fableName: PropTypes.string.isRequired,
   fableTitle: PropTypes.string.isRequired,
   fableLink: PropTypes.string,
 };
 
-export default FragmentCard;
+export default FableCard;

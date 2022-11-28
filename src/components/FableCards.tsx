@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import FragmentCard from './FragmentCard';
+import FableCard from './FableCard';
 import './styles/fragment-cards.scss';
 
 export type fable = {
@@ -9,16 +9,16 @@ export type fable = {
   title: string;
 };
 
-type FragmentCardsProps = {
+type FableCardsProps = {
   fables?: Array<fable>;
 };
 
-const FragmentCards: React.FC<FragmentCardsProps> = function({ fables }: FragmentCardsProps){
+const FableCards: React.FC<FableCardsProps> = function({ fables }: FableCardsProps){
   return (
     <div className='fragment-cards'>
         {fables ? fables.map((fable, i) => {
           return (
-            <FragmentCard 
+            <FableCard 
               key={ i } 
               fableName={fable.name} 
               fableTitle={fable.title} 
@@ -29,8 +29,8 @@ const FragmentCards: React.FC<FragmentCardsProps> = function({ fables }: Fragmen
   );
 };
 
-FragmentCards.propTypes = {
+FableCards.propTypes = {
   fables: PropTypes.array.isRequired,
 };
 
-export default FragmentCards;
+export default FableCards;

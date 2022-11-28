@@ -5,12 +5,12 @@
 @use 'sass:map';
 
 // Font sizes
-$title-size: 3rem;
+$heading-main-size: 3rem;
 $body-size: 1rem;
 $header-sizes: 2.4rem, 1.8rem, 1.4rem;
 
 @font-face {
-  font-family: 'title';
+  font-family: 'heading-main';
   src: url(./fonts/Philosopher-Bold.ttf);
 }
 
@@ -39,6 +39,11 @@ $header-sizes: 2.4rem, 1.8rem, 1.4rem;
     src: url(./fonts/QwitcherGrypen-Bold.ttf);
 }
 
+@font-face {
+    font-family: 'title';
+    src: url(./fonts/Montserrat-Light.ttf);
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -54,9 +59,9 @@ header {
   }
 }
 
-h1.title{
-  font-family: title;
-  @include font-styles.font-attributes($title-size);
+h1.heading-main{
+  font-family: heading-main;
+  @include font-styles.font-attributes($heading-main-size);
 }
 
 h1, h2, h3 {

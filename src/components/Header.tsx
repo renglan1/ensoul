@@ -18,7 +18,7 @@ const Header: React.FC<HeaderProps> = function({ expanded }: HeaderProps) {
         width={'168px'} 
         scale
       />
-      <h1 className='title'>
+      <h1 className='heading-main'>
         <SpacedText text='soularium' />
       </h1>
     </div>
