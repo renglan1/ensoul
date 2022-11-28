@@ -6,7 +6,6 @@ import SpacedText from "./SpacedText";
 import Tint from "./Tint";
 import ContrastImage from "./ContrastImage";
 import "components/styles/fable-card.scss";
-import {motion} from "framer-motion";
 
 type FableCardProps = {
   fableName: string;
@@ -35,7 +34,7 @@ const FableCard = ({
   }
 
   return (
-    <motion.div 
+    <div 
       className={`fable-card ${isActive ? "active" : ""}`}
       onClick={updateActive}
     >
@@ -52,8 +51,8 @@ const FableCard = ({
           <SpacedText text={fableName} contrast />
         </h2>
         <p className="title">{fableTitle}</p>
-      </div>
-    </motion.div>
+      </div> 
+    </div>
   );
 };
 
