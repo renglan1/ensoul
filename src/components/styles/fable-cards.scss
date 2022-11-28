@@ -1,28 +1,28 @@
 @use '../../assets/vars';
-.fragment-cards{
+.fable-cards{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 16px;
 
-    > .fragment-card {
+    > .fable-card {
         grid-column: span 12;
     }
 }
 
 @media #{vars.$mobile-and-up} {
-    .fragment-cards > .fragment-card {
+    .fable-cards > .fable-card {
         grid-column: span 6;
     }
 }
 
 @media #{vars.$desktop-small-and-up} {
-    .fragment-cards {
+    .fable-cards {
         gap: 80px;
     }
 }
 
 @media #{vars.$desktop-and-up} {
-    .fragment-cards > .fragment-card{
+    .fable-cards > .fable-card{
         grid-column: span 4;
     }
 }

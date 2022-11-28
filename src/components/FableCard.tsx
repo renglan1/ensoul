@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 import SpacedText from "./SpacedText";
 import Tint from "./Tint";
 import ContrastImage from "./ContrastImage";
-import "components/styles/fragment-card.scss";
+import "components/styles/fable-card.scss";
 import {motion} from "framer-motion";
 
 type FableCardProps = {
@@ -36,7 +36,7 @@ const FableCard = ({
 
   return (
     <motion.div 
-      className={`fragment-card ${isActive ? "active" : ""}`}
+      className={`fable-card ${isActive ? "active" : ""}`}
       onClick={updateActive}
     >
       <Tint color="black" opacity={0.75} borderRadius={10} />

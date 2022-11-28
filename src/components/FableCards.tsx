@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import FableCard from './FableCard';
-import './styles/fragment-cards.scss';
+import './styles/fable-cards.scss';
 
 export type fable = {
   id: number;
@@ -15,7 +15,7 @@ type FableCardsProps = {
 
 const FableCards: React.FC<FableCardsProps> = function({ fables }: FableCardsProps){
   return (
-    <div className='fragment-cards'>
+    <div className='fable-cards'>
         {fables ? fables.map((fable, i) => {
           return (
             <FableCard 
