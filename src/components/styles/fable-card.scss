@@ -24,6 +24,10 @@
   &.active {
     transform: rotateY(-180deg);
 
+    .contrast-image, .caption {
+        visibility: hidden;
+    }
+
     &:hover {
         transform: rotateY(-180deg) scale(1.025);
     }

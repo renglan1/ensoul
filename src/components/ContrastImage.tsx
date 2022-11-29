@@ -55,7 +55,7 @@ const ContrastImage: React.FC<ContrastImageProps> = function({
       <img
         src={
             require(`../assets/images/${src}`)
-          }
+        }
         alt={alt}
       />
     </div>
