@@ -22,5 +22,5 @@
 }
 
 @function scale-font($base-size, $factor) {
-  @return calc(#{$base-size} + #{$factor} * (#{$base-size} * 0.3));
+  @return calc(#{$base-size} + calc(#{$factor} * (#{$base-size} * 0.3)));
 }

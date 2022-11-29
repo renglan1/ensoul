@@ -18,13 +18,14 @@
 
   &:hover {
     cursor: pointer;
-    transform: rotateY(-20deg);
+    transform: scale(1.025);
   }
 
   &.active {
     transform: rotateY(-180deg);
+
     &:hover {
-      transform: rotateY(-200deg);
+        transform: rotateY(-180deg) scale(1.025);
     }
   }
 

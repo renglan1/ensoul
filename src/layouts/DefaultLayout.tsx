@@ -13,7 +13,7 @@ const DefaultLayout = ({ expanded, children }: DefaultLayoutProps) => {
   return (
     <div className="default-layout">
       <Header expanded={expanded}/>
-      <Wallpaper name="solace"/>
+      <Wallpaper name="alight"/>
       <main>
         {children}
       </main>
