@@ -1,67 +1,97 @@
-@use '../../assets/font-styles';
-@use '../../assets/global';
+@use "../../assets/font-styles";
+@use "../../assets/global";
 
 .fable-card {
-  top: 0;
-  position: relative;
-  border-radius: 10px;
-  color: white;
-  box-shadow: 0 0 8px 1px rgb(48, 48, 48);
-  text-decoration: none;
-  padding: 7.5%;
-  transform-origin: center;
-  transition: transform 0.85s;
-
-  &:visited {
+    top: 0;
+    position: relative;
+    border-radius: 10px;
     color: white;
-  }
+    box-shadow: 0 0 8px 1px rgb(48, 48, 48);
+    text-decoration: none;
+    padding: 7.5%;
+    transform-origin: center;
+    transition: transform 0.85s;
 
-  &:hover {
-    cursor: pointer;
-    transform: scale(1.025);
-  }
-
-  &.active {
-    transform: rotateY(-180deg);
-
-    .contrast-image, .caption {
-        visibility: hidden;
+    &:visited {
+        color: white;
     }
 
     &:hover {
-        transform: rotateY(-180deg) scale(1.025);
+        cursor: pointer;
+        transform: scale(1.025);
     }
-  }
 
-  .caption {
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%);
-    user-select: none;
+    &.active {
+        transform: rotateY(-180deg);
 
-    p,
-    h2 {
-      position: relative;
-      text-align: center;
-      width: 100%;
+        .contrast-image,
+        .caption {
+            display: none;
+        }
+
+        .embark {
+            display: flex;
+        } 
+
+        &:hover {
+            transform: rotateY(-180deg) scale(1.025);
+        }
     }
-    p {
-      @include font-styles.font-attributes(0.9rem);
-      @include font-styles.contrast-font(white);
-      margin-top: 12px;
-      font-family: 'title';
+
+    .caption, .embark {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        left: 50%;
     }
-    h2 {
-      border-top: 3px solid white;
-      border-bottom: 3px solid white;
-      padding: 2.5% 0;
-      border-radius: 3px;
-      white-space: nowrap;
-      transition: justify-content 0.5s;
-      font-family: 'heading-main';
+
+    .blurb-container {
+        position: relative;
     }
-  }
+
+    .embark {
+        display: none;
+        text-align: center;
+        transform: translate(-50%) scaleX(-1);
+        flex-direction: column;
+        align-items: center;
+        gap: 1.25em;
+
+        button {
+            position: relative;
+            width: 25%;
+            height: 2.5em;
+            font-family: body;
+            background-color: #A24363;
+            border-color: #FBECD6;
+            color: #FBECD6;
+        }
+    }
+
+    .caption {
+        user-select: none;
+        transform: translate(-50%);
+
+        .title,
+        h2 {
+            position: relative;
+            text-align: center;
+            width: 100%;
+        }
+        .title {
+            @include font-styles.font-attributes(0.9rem);
+            @include font-styles.contrast-font(white);
+            margin-top: 12px;
+            font-family: "title";
+        }
+        h2 {
+            border-top: 3px solid white;
+            border-bottom: 3px solid white;
+            padding: 2.5% 0;
+            border-radius: 3px;
+            white-space: nowrap;
+            transition: justify-content 0.5s;
+            font-family: "heading-main";
+        }
+    }
 }
- 

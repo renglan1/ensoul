@@ -10,11 +10,13 @@ import "components/styles/fable-card.scss";
 type FableCardProps = {
   fableName: string;
   fableTitle: string;
+  fableBlurb: string;
 };
 
 const FableCard = ({
   fableName,
   fableTitle,
+  fableBlurb,
 }: FableCardProps) => {
   const [isActive, setIsActive] = React.useState(false);
 
@@ -52,6 +54,13 @@ const FableCard = ({
         </h2>
         <p className="title">{fableTitle}</p>
       </div> 
+      <div className="embark">
+        <div className="blurb-container">
+            <Tint color="#FBECD6" opacity={0.35} blur={15}/>
+            <p className="blurb">{fableBlurb}</p>
+        </div>
+        <button>EMBARK</button>
+      </div>
     </div>
   );
 };
